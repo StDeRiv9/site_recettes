@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow: auto;  /*---- evite de faire déborder la page entiere*/
+    
+}
+/*-------fin du reset-----------------*/
+body{
+    background-color: #8baabb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+/*-------fin de la mise en place de base-----------------*/
+
+div.entete{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+p.entete{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block; /*---------> inline occupe que l'espace necessaire */
+    font-size: 16px;
+    margin-top: -15px;
+    padding: 8px 18px;
+}
+/*-------fin de l'entete pour recette-----------------*/
+.centre{
+    text-align: center;
+    width: 100%;
+}
+/*-------fin pour centre-----------------*/
+div.container{
+    overflow: visible;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1); /* offset-x, offset-y,  blur-radius, spread-raduis, color*/
+    margin:60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+
+}
+/*-------fin du conatiner de la page-----------------*/
+
+p.description{
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+    font-size: 14px;
+}
+/*-------fin pour la description-----------------*/
+.separateur{
+    height: 1px;
+    width: 100px;
+    background-color: #000;
+    margin-left:auto ;
+    margin-right:auto ;
+    margin-bottom: 10px;
+
+}
+/*-------fin de la barre separateur-----------------*/
+div.info{
+    position: relative;  /*-----------> repositionne en fonctionne de sa position d'origine*/
+}
+.info img{
+    display:block;
+    max-height: 400px;
+    object-fit: cover; /*----> permet d'avoir une photo qui ne perd pas en qualité*/
+    /*---------- permet d'afficher quelque le temps que l'image arrive*/
+    min-height: 200px;
+    background-color: lightgray;
+
+}
+table.info{
+    position: absolute; /*------------> elle n'occupe plus d'espace*/
+    height: 80px;
+    background-color:#6c829dc0;
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+}
+table.info td{
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+    
+}
+table.info th{
+    font-size: 16px;
+    padding-bottom: 8px;
+    vertical-align: bottom;
+}
+/*----------- fin pour info ----------------*/
+div.colonne{
+    width: 45%;
+    margin-top: 20px;
+}
+.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6c829d ;
+    padding-bottom: 5px;
+}
+/*----------- fin pour  colonne ----------------*/
+div.colonne1{
+    /*background-color: #8baabb;*/
+    display: inline-block;
+    margin-right: 10%;
+}
+/*----------- fin pour  colonne1 ----------------*/
+div.colonne2{
+    /*background-color: aqua;*/
+    float: right;
+}
+/*----------- fin pour  colonne2 ----------------*/
+div.colonne1 ul{
+    padding-left: 0px;
+}
+div.colonne1 li{
+    text-align: center;
+    border: 1px solid  lightgreen;
+    margin: 10px 0px 10px 0px;
+    font-size: 14px;
+    padding: 10px;
+}
+/*----------- fin pour colonne1 ul  li ----------------*/
+table.etapes p.numero{
+    background-color: #6c829d;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box; /*---- permet de garder les dimensions du w et h tout en ajustant les données ajouter en padding*/
+    border-radius: 50%;
+}
+table.etapes td{
+    vertical-align: top;
+}
+table.etapes td.preparation{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+table.etapes tr{
+    height: 40px;
+}
+/*---------- fin pour etape ----------------*/
+
+
